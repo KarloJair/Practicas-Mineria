@@ -1,6 +1,6 @@
 import pandas as pd
 
-df = pd.read_csv("base vgsales.csv", encoding="latin-1")
+df = pd.read_csv("Practica 1/base vgsales.csv", encoding="latin-1")
 
 print(df.head())
 print(df.shape)
