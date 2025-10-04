@@ -1,3 +1,4 @@
+import os
 import pandas as pd
 import seaborn as sns
 import matplotlib.pyplot as plt
@@ -8,6 +9,7 @@ from sklearn.model_selection import train_test_split
 output_path = "Practica_5/plots/"
 output_path_JP_plots = "Practica_5/plots/JP_plots/"
 df = pd.read_csv("vgsales.csv")
+os.makedirs(output_path, exist_ok=True)
 
 sales_colums = ["NA_Sales", "EU_Sales", "JP_Sales", "Other_Sales", "Global_Sales"]
 
